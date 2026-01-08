@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <title>Dashboard TI.23.C4</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <style>
+        body {
+            background: linear-gradient(135deg, #0d6efd, #6610f2);
+            min-height: 100vh;
+            font-family: 'Segoe UI', sans-serif;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        /* DASHBOARD */
+        .dashboard-card {
+            background: #ffffff;
+            border-radius: 15px;
+            padding: 25px;
+            width: 100%;
+            max-width: 520px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+            position: relative;
+        }
+
+        /* LOGO */
+        .dashboard-logo {
+            position: absolute;
+            top: 15px;
+        }
+
+        .dashboard-logo.left {
+            left: 15px;
+        }
+
+        .dashboard-logo.right {
+            right: 15px;
+        }
+
+        .dashboard-logo img {
+            width: 60px;
+            height: auto;
+        }
+
+        /* JUDUL */
+        h1 {
+            margin-top: 60px;
+            margin-bottom: 25px;
+            font-weight: bold;
+            color: #0d6efd;
+            text-align: center;
+            font-size: 22px;
+        }
+
+        /* MENU */
+        .menu a {
+            display: block;
+            margin-bottom: 15px;
+            text-decoration: none;
+        }
+
+        .menu .btn {
+            width: 100%;
+            padding: 12px;
+            font-size: 16px;
+            border-radius: 10px;
+            transition: 0.3s;
+        }
+
+        .menu .btn:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 8px 15px rgba(0,0,0,0.15);
+        }
+
+        /* 🔔 JARAK KHUSUS SMART NOTIFY */
+        .smartnotify-btn {
+            margin-top: 35px; /* jarak lebih renggang dari 8 matkul */
+        }
+
+        /* FOOTER */
+        footer {
+            margin-top: 20px;
+            font-size: 13px;
+            color: #666;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+
+<div class="dashboard-card">
+
+    <!-- LOGO KIRI -->
+    <div class="dashboard-logo left">
+        <img src="images/logo-ti23c4.png" alt="Logo TI.23.C4">
+    </div>
+
+    <!-- LOGO KANAN -->
+    <div class="dashboard-logo right">
+        <img src="images/logo-upb.png" alt="Logo Universitas Pelita Bangsa">
+    </div>
+
+    <h1>
+        WEBSITE TUGAS KELOMPOK<br>
+        MATA KULIAH<br>
+        TI.23.C4<br>
+        Semester 5
+    </h1>
+
+    <div class="menu">
+        <a href="sistem-operasi.php">
+            <button class="btn btn-primary">Sistem Operasi</button>
+        </a>
+
+        <a href="kriptografi.php">
+            <button class="btn btn-success">Kriptografi</button>
+        </a>
+
+        <a href="big-data.php">
+            <button class="btn btn-warning text-dark">Big Data</button>
+        </a>
+
+        <a href="perancangan-sistem-informasi.php">
+            <button class="btn btn-info text-dark">Perancangan Sistem Informasi</button>
+        </a>
+
+        <a href="manajemen-basis-data.php">
+            <button class="btn btn-secondary text-white">Manajemen Basis Data</button>
+        </a>
+
+        <a href="pendidikan-agama.php">
+            <button class="btn btn-dark">Pendidikan Agama</button>
+        </a>
+
+        <a href="sistem-pendukung-keputusan.php">
+            <button class="btn btn-danger">Sistem Pendukung Keputusan</button>
+        </a>
+
+        <a href="pemrograman-visual.php">
+            <button class="btn btn-success">Pemrograman Visual</button>
+        </a>
+
+        <!-- 🔔 SMART NOTIFY (LEBIH RENGGANG) -->
+        <a href="https://riyadisimpati.web.id/smartnotify/index.php"
+           target="_blank"
+           class="smartnotify-btn">
+            <button class="btn btn-outline-primary">
+                SmartNotify Otomatis
+            </button>
+        </a>
+    </div>
+
+    <footer class="footer-custom">
+        @2025 RIYADI SIMPATI.WEB.ID
+    </footer>
+
+    <footer>
+        © 2025 | Kelas TI.23.C4
+    </footer>
+
+</div>
+
+</body>
+</html>
